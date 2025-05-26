@@ -8,7 +8,7 @@
 
 //print_r($_SERVER);
 if (!isset($_GET['q'])){
-    include('./web_proj-main/index.html');
+    include('./main-page/index.html');
 }
 elseif ($_GET['q']=='login'){
     if ($_SERVER['REQUEST_METHOD']=='GET'){

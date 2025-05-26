@@ -1,0 +1,197 @@
+body {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* Шапка */
+#header-background-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.header {
+  width: 100%;
+  position: relative;
+  color: #fff;
+  padding-top: 20px;
+}
+
+body:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../sources/druplicon.svg) no-repeat center top;
+  background-size: contain;
+}
+
+.sub-title {
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 55px;
+  opacity: 70%;
+}
+
+.rate-button {
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  color: #fff;
+  text-decoration: none;
+  padding: 22px 20px;
+  width: 220px;
+  max-width: 100%;
+  text-align: center;
+  border: 2px solid #f14d34;
+  border-radius: 5px;
+  letter-spacing: 0.06em;
+  transition: background 300ms;
+  margin: 0 auto;
+  margin-bottom: 55px;
+}
+
+.rate-button:hover {
+  color: #fff;
+  text-decoration: none;
+  background: #f14d34;
+}
+
+.redline-box {
+  margin-bottom: 30px;
+}
+
+.redline-box:first-of-type .redline-title {
+  font-size: 48px;
+  margin-top: -22px;
+}
+
+.redline {
+  border-left: 3px solid #f14d34;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  min-height: 80px;
+  height: 100%;
+}
+
+.redline-title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.redline-text {
+  font-size: 12px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.redline a {
+  color: #f14d34;
+}
+
+.redline-text-blocks {
+  margin-top: 50px;
+}
+
+.bars-title{
+    text-align: center;
+}
+
+@media screen and (min-width: 576px) {
+  #video-block{
+    height: 97%;
+  }
+
+  .main{
+    margin-top: 100px;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  #video-block{
+    height: 90%;
+  }
+
+  body:before {
+    right: 50%;
+  }
+
+  .bars-title{
+    text-align: left;
+  }
+
+  .header{
+    padding-top: 40px;
+  }
+
+  .header:before {
+    background-size: inherit;
+    background-position: left top;
+  }
+
+  .sub-title {
+    text-align: left;
+    font-size: 18px;
+  }
+  
+  .redline-box {
+    margin-bottom: 96px;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 42px;
+  }
+
+  .title {
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .rate-button {
+    margin-left: 0;
+    margin-bottom: 155px;
+  }
+}
+
+
+/* MAIN */
+
+.main{
+    margin-top: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#tasks{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .main{
+    margin-top: 65px;
+  }
+}

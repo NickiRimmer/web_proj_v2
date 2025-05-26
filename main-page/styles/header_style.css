@@ -1,0 +1,26 @@
+#navbarNavDropdown {
+    margin: auto 0 !important;
+}
+
+#header {
+    padding-top: 20px;
+    font-size: medium;
+    color: aliceblue;
+}
+
+.nav-link, .nav-link:hover, .navbar {
+    color: aliceblue;
+    --bs-navbar-active-color: aliceblue;
+}
+
+
+.dropdown-menu {
+    border-radius: 0;
+    background-color: #f14d34;
+}
+
+@media screen and (max-width: 992px) {
+    #header {
+        background-color: #050613;
+    }
+}
