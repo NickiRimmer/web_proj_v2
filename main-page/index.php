@@ -972,28 +972,7 @@
                 </div>
 
                 <div class="col-lg-6 col-md-12">
-                    <form id="feedback-form" method="POST" enctype="multipart/form-data" class="contact-form">
-                        <div class="mb-2">
-                            <input type="text" class="form-control" name="name" id="name" placeholder="Ваше имя" required>
-                        </div>
-                        <div class="mb-2">
-                            <input type="tel" class="form-control" name="phone" id="phone" placeholder="Телефон" required>
-                        </div>
-                        <div class="mb-2">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" required>
-                        </div>
-                        <div class="mb-2">
-                            <textarea class="form-control" name="message" id="message" placeholder="Ваш комментарий" rows="3"></textarea>
-                        </div>
-                        <div class="form-check mb-3">
-                            <input class="form-check-input" type="checkbox" id="agreeCheckbox" required>
-                            <label class="form-check-label" for="agreeCheckbox">
-                                  Отправляя заявку, я даю согласие на обработку своих персональных данных.
-                            </label>
-                        </div>
-                        <button type="submit" class="btn btn-danger w-100">Свяжитесь с нами</button>
-                    </form>
-                    <div id="feedback-result" class="result"></div>
+                    <?php include("../form.php") ?>
                 </div>
             </div>
 

@@ -1,16 +1,8 @@
-<?php
-/*if (!preg_match('/^\/web_4s\/task[1-6]\/(|index.php|admin.php)$/', $_SERVER['REQUEST_URI'])){
-  http_response_code(400);
-  header('HTTP/1.1 400 Bad request');
-  exit();
-}*/
-?>
 
 <html>
 
 <head>
   <style>
-    /*Сообщения об ошибках и поля с ошибками выводим с красным бордюром. */
     .error {
       border: 2px solid red;
     }
@@ -38,10 +30,32 @@
   }
   ?>
 
+<form id="feedback-form" method="POST" enctype="multipart/form-data" class="contact-form">
+                        <div class="mb-2">
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="mb-2">
+                            <input type="tel" class="form-control" name="phone" id="phone" placeholder="Телефон" required>
+                        </div>
+                        <div class="mb-2">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" required>
+                        </div>
+                        <div class="mb-2">
+                            <textarea class="form-control" name="message" id="message" placeholder="Ваш комментарий" rows="3"></textarea>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="agreeCheckbox" required>
+                            <label class="form-check-label" for="agreeCheckbox">
+                                  Отправляя заявку, я даю согласие на обработку своих персональных данных.
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-danger w-100">Свяжитесь с нами</button>
+                    </form>
+                    <div id="feedback-result" class="result"></div>
 
-  <form action="" method="POST">
-    <label>
-      ФИО:
+
+  <form id="feedback-form" method="POST" enctype="multipart/form-data" class="contact-form">
+
       <input type="text" name="fio"
         <?php if ($errors['fio']) {
           print 'class="error"';
@@ -116,7 +130,7 @@
     </label><br>
 
     <label>
-      Согласен с обработкой пермональных данных
+      Согласен с обработкой персональных данных
       <input type="checkbox" name="agree"
         <?php if ($errors['agree']) {
           print 'class="error"';
