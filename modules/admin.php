@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       updateApplication($db, $_POST['update']);
     }
 
-    header("Location: admin");
+    header("Location: ./admin");
     exit();
 }
 

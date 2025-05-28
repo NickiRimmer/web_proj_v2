@@ -60,7 +60,7 @@ elseif ($_SERVER['REQUEST_METHOD'] == 'POST') {
   saveValueCookies($_POST, $abilities);
 
   if (!empty($errors)) {
-    header('Location: /#feeback-form');
+    header('Location: ./#feeback-form');
     exit();
   }
   else {
