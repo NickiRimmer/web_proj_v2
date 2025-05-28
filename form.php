@@ -1,5 +1,3 @@
-<body>
-
     <?php
     if (empty($_SESSION['csrf_token'])) {
         $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
@@ -48,7 +46,7 @@
       <small> Любимый язык программирования</small>
       <br>
       <div class="mb-2 <?php if ($errors['abilities']) {print ' error';} ?>">
-        <select id="abilities" name="abilities[]" multiple="multiple">
+        <select style="width: 100px; height:250px" id="abilities" name="abilities[]" multiple="multiple">
             <?php 
               print_r($values);
               foreach ($abilities as $key => $value) {
@@ -68,7 +66,7 @@
       </div><br>
 
       <div class="form-check mb-3 <?php if ($errors['check']) {print ' error';} ?>">
-        <input class="form-check-input" type="checkbox" id="agreeCheckbox" checked="checked" required>
+        <input class="form-check-input" name="check" type="checkbox" id="agreeCheckbox" checked="checked" required>
         <label class="form-check-label" for="agreeCheckbox">
            С контрактом ознакомлен(а)      
         </label>               
@@ -78,6 +76,3 @@
 
       <div id="feedback-result" class="result"></div>
     </form>
-
-  </body>
-</html>

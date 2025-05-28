@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
   }
 
   if (!empty($_COOKIE['pass'])) {
-    $messages[] = sprintf('<div class="success">Вы можете <a href="login.php">войти</a> с логином <strong>%s</strong>
+    $messages[] = sprintf('<div class="success">Вы можете <a href="/login">войти</a> с логином <strong>%s</strong>
       и паролем <strong>%s</strong> для изменения данных.</div>',
       strip_tags($_COOKIE['login']),
       strip_tags($_COOKIE['pass']));
@@ -50,9 +50,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
       }
   }
 
-  include('form.php');
+  include('main-page/index.php');
 }
-else { 
+elseif ($_SERVER['REQUEST_METHOD'] == 'POST') { 
   if (empty($_POST['csrf_token']) || $_POST['csrf_token'] !== $_SESSION['csrf_token']) {
     die('Недействительный CSRF-токен');
   }
@@ -61,7 +61,7 @@ else {
   saveValueCookies($_POST, $abilities);
 
   if (!empty($errors)) {
-    header('Location: index.php');
+    header('Location: /#feeback-form');
     exit();
   }
   else {
@@ -84,7 +84,7 @@ else {
   }
 
   setcookie('save', '1');
-  header('Location: ./');
+  header('Location: ./#feedback-form');
 }
 
 

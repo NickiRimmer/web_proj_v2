@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       updateApplication($db, $_POST['update']);
     }
 
-    header("Location: admin.php");
+    header("Location: admin");
     exit();
 }
 
@@ -78,7 +78,7 @@ if ($edit_id) {
 <head>
     <meta charset="UTF-8">
     <title>Админка</title>
-    <link rel='stylesheet' href='style.css'>
+    <link rel='stylesheet' href='styles/style.css'>
 </head>
 <body>
 
@@ -125,7 +125,7 @@ if ($edit_id) {
                         <input type="hidden" name="delete" value="<?php echo htmlspecialchars( $user['id_app']) ?>">
                         <button type="submit">Удалить</button>
                     </form>
-                    <a href="admin.php?edit=<?php echo htmlspecialchars( $user['id_app']) ?>" class="edit-link">Редактировать</a>
+                    <a href="admin?edit=<?php echo htmlspecialchars( $user['id_app']) ?>" class="edit-link">Редактировать</a>
                 </td>
             </tr>
             <?php endforeach; ?>
@@ -181,7 +181,7 @@ if ($edit_id) {
             
             <div class="form-actions">
                 <button type="submit">Сохранить</button>
-                <a href="admin.php">Отмена</a>
+                <a href="admin">Отмена</a>
             </div>
         </form>
     </div>

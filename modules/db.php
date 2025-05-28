@@ -1,17 +1,16 @@
 <?php
 function getDatabase(){
-  $user = 'u68859'; 
-  $pass = '5248297'; 
-  $db = new PDO('mysql:host=localhost;dbname=u68859', $user, $pass, 
+  $user = 'root'; 
+  $pass = NULL; 
+  $db = new PDO('mysql:host=localhost;dbname=web', $user, $pass, 
       [PDO::ATTR_PERSISTENT => true, PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]); 
 
   return $db;
 }
 $db = getDatabase();
 
-function getAbilities(){
+function getAbilities($db){
   try {
-    global $db;
     $abilities = [];
     $data = $db->query("SELECT id_lang, name FROM langs")->fetchAll();
     foreach ($data as $ability) {
@@ -26,9 +25,8 @@ function getAbilities(){
     die('Произошла ошибка базы данных');
   }
 }
-function getValuesFromDB($login){
-  try {
-    global $db;
+function getValuesFromDB($db, $login){
+  try{
     $id = $db->prepare("SELECT id_app FROM auth where login = :login");
     $id->bindParam(':login', $login);
     $id->execute();
@@ -63,9 +61,8 @@ function getValuesFromDB($login){
     exit();
   }
 }
-function getAdminData($login){
-  try {
-    global $db;
+function getAdminData($db, $login){
+  try{
     $data = $db->prepare("SELECT login, pass FROM admins where login = :login");
     $data->bindParam(':login', $login);
     $data->execute();
@@ -77,9 +74,8 @@ function getAdminData($login){
     exit();
   }
 }
-function getAllUserData(){
-  try {
-    global $db;
+function getAllUserData($db){
+  try{
     $users = $db->query("SELECT app.id_app, app.name, app.phone, app.email, app.dateBirth, app.sex, app.bio
                          FROM application app"
                        )->fetchAll();
@@ -90,9 +86,8 @@ function getAllUserData(){
     exit();
   }
 }
-function getAllConnectionData(){
-  try {
-    global $db;
+function getAllConnectionData($db){
+  try{
     $connection = $db->query("SELECT c.id_app, c.id_lang, l.name
                       FROM connection c 
                       JOIN langs l 
@@ -105,9 +100,8 @@ function getAllConnectionData(){
     exit();
   }
 }
-function getStatsAboutLangs(){
-  try {
-    global $db;
+function getStatsAboutLangs($db){
+  try{
     $stats = $db->query("SELECT l.name, count(*) as user_count
                       FROM application app 
                       INNER JOIN connection c
@@ -124,9 +118,8 @@ function getStatsAboutLangs(){
     exit();
   }
 }
-function getUserId($login){
-  try {
-    global $db;
+function getUserId($db, $login){
+  try{
     $data = $db->prepare("SELECT id_app FROM auth WHERE login = ?");
     $data->execute([$login]);
     $user = $data->fetch(PDO::FETCH_ASSOC);
@@ -137,9 +130,8 @@ function getUserId($login){
     die('Произошла ошибка базы данных');
   }
 }
-function getUserAuthData($login){
+function getUserAuthData($db, $login){
   try {
-    global $db;
     $data = $db->prepare("SELECT pass FROM auth WHERE login = ?");
     $data->execute([$login]);
     $user = $data->fetch(PDO::FETCH_ASSOC);
@@ -151,9 +143,8 @@ function getUserAuthData($login){
   }
 }
 
-function saveToApplication(){
+function saveToApplication($db){
   try {
-    global $db;
     $stmt = $db->prepare("INSERT INTO application (name, phone, email, dateBirth, sex, bio) VALUES (:name, :phone, :email, :dateBirth, :sex, :bio)");
     $stmt->bindParam(':name', $_POST['fio']);
     $stmt->bindParam(':phone', $_POST['telephone']);
@@ -168,9 +159,8 @@ function saveToApplication(){
     die('Произошла ошибка базы данных');
   }
 }
-function saveToConnection(){
+function saveToConnection($db){
   try {
-    global $db;
     $id_app = $db->lastInsertId();
     $stmt = $db->prepare("INSERT INTO connection (id_app, id_lang) VALUES (:id_app, :id_lang)");
     foreach ($_POST['abilities'] as $ability) {
@@ -185,9 +175,8 @@ function saveToConnection(){
     die('Произошла ошибка базы данных');
   }
 }
-function saveToAuth($pass, $login, $id_app){
+function saveToAuth($db, $pass, $login, $id_app){
   try {
-    global $db;
       $hash_pass = md5($pass);
       $stmt = $db->prepare("INSERT INTO auth (id_app, login, pass) VALUES (:id_app, :login, :pass)");
       $stmt->bindParam(':id_app', $id_app);
@@ -201,9 +190,8 @@ function saveToAuth($pass, $login, $id_app){
     }
 }
 
-function updateApplication($id){
+function updateApplication($db, $id){
   try {
-    global $db;
       $stmt = $db->prepare("UPDATE application SET name = ?, phone = ?, email = ?, dateBirth = ?, sex = ?, bio = ? WHERE id_app = ?");
       $stmt->execute([
               $_POST['fio'], $_POST['telephone'], $_POST['email'], $_POST['dateOfBirth'], $_POST['radio'], $_POST['bio'], $id
@@ -222,9 +210,8 @@ function updateApplication($id){
   }
 }
 
-function deleteUserData($id){
-  try {
-    global $db;
+function deleteUserData($db, $id){
+  try{
     $db->beginTransaction();
 
     $stmt = $db->prepare("DELETE FROM connection WHERE id_app = ?");

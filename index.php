@@ -2,7 +2,6 @@
 
 if (!isset($_GET['q'])){
     include('./modules/index.php');
-    include('./web_proj-main/index.html');
 }
 elseif ($_GET['q']=='login'){
     include('./modules/login.php');

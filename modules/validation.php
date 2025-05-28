@@ -123,73 +123,73 @@ function deleteErrorCookies(){
     setcookie('bio_error', '', 100000);
     setcookie('check_error', '', 100000);
 }
-function saveValueCookies($abilities){
-  setcookie('fio_value', $_POST['fio'], time() + 12 * 30 * 24 * 60 * 60);
-  setcookie('telephone_value', $_POST['telephone'], time() + 12 * 30 * 24 * 60 * 60);
-  setcookie('email_value', $_POST['email'], time() + 12 * 30 * 24 * 60 * 60);
-  setcookie('dateOfBirth_value', $_POST['dateOfBirth'], time() + 12 * 30 * 24 * 60 * 60);
+function saveValueCookies($P, $abilities){
+  setcookie('fio_value', $P['fio'], time() + 12 * 30 * 24 * 60 * 60);
+  setcookie('telephone_value', $P['telephone'], time() + 12 * 30 * 24 * 60 * 60);
+  setcookie('email_value', $P['email'], time() + 12 * 30 * 24 * 60 * 60);
+  setcookie('dateOfBirth_value', $P['dateOfBirth'], time() + 12 * 30 * 24 * 60 * 60);
   foreach($abilities as $key => $value){
       setcookie($key, '', 100000);
   }
-  foreach($_POST['abilities'] as $key => $value){
+  foreach($P['abilities'] as $key => $value){
     setcookie($value, 1, time() + 12 * 30 * 24 * 60 * 60);
   }
-  setcookie('bio_value', $_POST['bio'], time() + 12 * 30 * 24 * 60 * 60);
+  setcookie('bio_value', $P['bio'], time() + 12 * 30 * 24 * 60 * 60);
 }
-function checkErrorAndSaveErrorCookies($abilities) {
+function checkErrorAndSaveErrorCookies($P, $abilities) {
     $errors = FALSE;
     
-    if (empty($_POST['fio'])) {
+    if (empty($P['fio'])) {
       setcookie('fio_error', '1', time() + 24 * 60 * 60);
       $errors = TRUE;
     }
-    elseif(!preg_match('/^([A-Z]|[a-z]| |[а-я]|[А-Я]){3,150}$/ui', $_POST['fio'])){
+    elseif(!preg_match('/^([A-Z]|[a-z]| |[а-я]|[А-Я]){3,150}$/ui', $P['fio'])){
       setcookie('fio_error', '2', time() + 24 * 60 * 60);
       $errors = TRUE;
     }
 
 
-    if (empty($_POST['telephone'])) {
+    if (empty($P['telephone'])) {
       setcookie('telephone_error', '1', time() + 24 * 60 * 60);
       $errors = TRUE;
     }
-    elseif(!preg_match('/^\+?[0-9]{11,14}$/', $_POST['telephone'])){
+    elseif(!preg_match('/^\+?[0-9]{11,14}$/', $P['telephone'])){
       setcookie('telephone_error', '2', time() + 24 * 60 * 60);
       $errors = TRUE;
     }
     
 
-    if (empty($_POST['email'])) {
+    if (empty($P['email'])) {
       setcookie('email_error', '1', time() + 24 * 60 * 60);
       $errors = TRUE;
     }
-    elseif(!preg_match('/^\w{1,80}@\w{1,10}.\w{1,10}$/', $_POST['email'])){
+    elseif(!preg_match('/^\w{1,80}@\w{1,10}.\w{1,10}$/', $P['email'])){
       setcookie('email_error', '2', time() + 24 * 60 * 60);
       $errors = TRUE;
     }
     
 
-    if (empty($_POST['dateOfBirth'])) {
+    if (empty($P['dateOfBirth'])) {
       setcookie('dateOfBirth_error', '1', time() + 24 * 60 * 60);
       $errors = TRUE;
     }
-    elseif(!preg_match('/^\d{4}-\d{2}-\d{2}$/', $_POST['dateOfBirth'])){
+    elseif(!preg_match('/^\d{4}-\d{2}-\d{2}$/', $P['dateOfBirth'])){
       setcookie('dateOfBirth_error', '2', time() + 24 * 60 * 60);
       $errors = TRUE;
     }
     
 
-    if (empty($_POST['radio'])) {
+    if (empty($P['radio'])) {
       setcookie('radio_error', '1', time() + 24 * 60 * 60);
       $errors = TRUE;
     }
-    elseif(!($_POST['radio'] == "female" || $_POST['radio'] == "male")){
+    elseif(!($P['radio'] == "female" || $P['radio'] == "male")){
       setcookie('radio_error', '2', time() + 24 * 60 * 60);
       $errors = TRUE;
     }
     
   
-    if (empty($_POST['abilities'])) {
+    if (empty($P['abilities'])) {
       setcookie('abilities_error', '1', time() + 24 * 60 * 60);
       $errors = TRUE;
     }
@@ -203,17 +203,17 @@ function checkErrorAndSaveErrorCookies($abilities) {
     }
    
 
-    if (empty($_POST['bio'])) {
+    if (empty($P['bio'])) {
       setcookie('bio_error', '1', time() + 24 * 60 * 60);
       $errors = TRUE;
     }
-    elseif(!preg_match('/^[\w\s!?,.()]{1,1000}$/u', $_POST['bio'])){
+    elseif(!preg_match('/^[\w\s!?,.()]{1,1000}$/u', $P['bio'])){
       setcookie('bio_error', '2', time() + 24 * 60 * 60);
       $errors = TRUE;
     }
     
     
-    if (empty($_POST['check'])) {
+    if (empty($P['check'])) {
       setcookie('check_error', '1', time() + 24 * 60 * 60);
       $errors = TRUE;
     }

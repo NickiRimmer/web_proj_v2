@@ -1,3 +1,7 @@
+CREATE DATABASE web;
+
+USE web;
+
 CREATE TABLE admins (
   login varchar(15) NOT NULL DEFAULT '',
   pass varchar(60) NOT NULL DEFAULT '',

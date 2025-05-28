@@ -21,27 +21,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 
 
-    <link rel="stylesheet" href="styles/style.css" media="screen">
+    <link rel="stylesheet" href="/main-page/styles/style.css" media="screen">
 
-    <link rel="stylesheet" href="styles/header_style.css">
-    <script src="scripts/header_script.js"></script>
+    <link rel="stylesheet" href="/main-page/styles/header_style.css">
+    <script src="/main-page/scripts/header_script.js"></script>
 
-    <link rel="stylesheet" href="./styles/3_styles.css">
-    <script src="./scripts/scrypt.js" defer></script>
+    <link rel="stylesheet" href="/main-page/styles/3_styles.css">
+    <!-- script src="/main-page/scripts/scrypt.js" defer></script -->
 
-    <link rel="stylesheet" href="./styles/1_style.css" media="screen">
-    <script src="./scripts/accordion.js" defer></script>
+    <link rel="stylesheet" href="/main-page/styles/1_style.css" media="screen">
+    <script src="/main-page/scripts/accordion.js" defer></script>
 
-    <link rel="stylesheet" href="./styles/2_style.css">
+    <link rel="stylesheet" href="/main-page/styles/2_style.css">
 
-    <link rel="stylesheet" href="./styles/4_style.css" media="screen">
+    <link rel="stylesheet" href="/main-page/styles/4_style.css" media="screen">
 
-    <link rel="stylesheet" href="./styles/tariffStyle.css">
-    <script src="./scripts/tariff.js" defer></script>
+    <link rel="stylesheet" href="/main-page/styles/tariffStyle.css">
+    <script src="/main-page/scripts/tariff.js" defer></script>
 
-    <link rel="stylesheet" href="./styles/5_style.css" type="text/css">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <script src="./scripts/slides.js"></script>
+    <link rel="stylesheet" href="/main-page/styles/5_style.css" type="text/css">
+    <link rel="stylesheet" href="/main-page/styles/styles.css">
+    <script src="/main-page/scripts/slides.js"></script>
     
   </head>
 
@@ -54,7 +54,7 @@
 
             <figure class="figure align-middle align-items-center my-auto">
             <a class="navbar-brand align-middle" id="brand" href="#">
-                <img src="./sources/logo-initlab.svg" class="figure-img img-fluid " alt="...">
+                <img src="/main-page/sources/logo-initlab.svg" class="figure-img img-fluid " alt="...">
             </a></figure>
           
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -124,7 +124,7 @@
 
       <div class="container-fluid header">
         <video autoplay muted loop id="header-background-video">
-          <source src="./sources/header_background.mp4" type="video/mp4">
+          <source src="/main-page/sources/header_background.mp4" type="video/mp4">
         </video>
         <div class="container-fluid row">
           <div class="col-md-1 col-lg-2"></div>
@@ -144,7 +144,7 @@
                 <div class="redline">
                   <div class="redline-title">
                     #1
-                    <img src="./sources/cup.png" alt="#1">
+                    <img src="/main-page/sources/cup.png" alt="#1">
                   </div>
                   <div class="redline-text">
                     Drupal-разработчик <br> в России по версии <br> Рейтинга Рунета
@@ -208,49 +208,49 @@
     
           <div class="row row-flex competencies-row">
             <div class="col-sm-3 col-xs-6">
-              <div class="competency"><img src="./sources/competency-1.svg" alt="comp"><img class="competences-img" src="./sources/icon.svg" alt="icon"></div>
+              <div class="competency"><img src="/main-page/sources/competency-1.svg" alt="comp"><img class="competences-img" src="/main-page/sources/icon.svg" alt="icon"></div>
               <div class="coment">
                 Добавление <br> информации на сайт,<br> создание новых <br> разделов
               </div>
             </div>
             <div class="col-sm-3 col-xs-6">
-              <div class="competency"><img src="./sources/competency-2.svg" alt="comp"><img class="competences-img" src="./sources/icon.svg" alt="icon"></div>
+              <div class="competency"><img src="/main-page/sources/competency-2.svg" alt="comp"><img class="competences-img" src="/main-page/sources/icon.svg" alt="icon"></div>
               <div class="coment">
                 Разработка <br> и оптимизация<br> модулей сайта
               </div>
             </div>
             <div class="col-sm-3 col-xs-6">
-              <div class="competency"><img src="./sources/competency-3.svg" alt="comp"><img class="competences-img" src="./sources/icon.svg" alt="icon"></div>
+              <div class="competency"><img src="/main-page/sources/competency-3.svg" alt="comp"><img class="competences-img" src="/main-page/sources/icon.svg" alt="icon"></div>
               <div class="coment">
                 Интеграция с CRM, <br> 1С, платежными <br> системами, любыми <br> веб-сервисами
               </div>
             </div>
             <div class="col-sm-3 col-xs-6">
-              <div class="competency"><img src="./sources/competency-4.svg" alt="comp"><img class="competences-img" src="./sources/icon.svg" alt="icon"></div>
+              <div class="competency"><img src="/main-page/sources/competency-4.svg" alt="comp"><img class="competences-img" src="/main-page/sources/icon.svg" alt="icon"></div>
               <div class="coment">
                 Любые доработки <br> функционала<br> и дизайна
               </div>
             </div>
             <div class="col-sm-3 col-xs-6">
-              <div class="competency"><img src="./sources/competency-5.svg" alt="comp"><img class="competences-img" src="./sources/icon.svg" alt="icon"></div>
+              <div class="competency"><img src="/main-page/sources/competency-5.svg" alt="comp"><img class="competences-img" src="/main-page/sources/icon.svg" alt="icon"></div>
               <div class="coment">
                 Аудит имониторинг<br> безопасности Drupal <br> сайтов
               </div>
             </div>
             <div class="col-sm-3 col-xs-6">
-              <div class="competency"><img src="./sources/competency-6.svg" alt="comp"><img class="competences-img" src="./sources/icon.svg" alt="icon"></div>
+              <div class="competency"><img src="/main-page/sources/competency-6.svg" alt="comp"><img class="competences-img" src="/main-page/sources/icon.svg" alt="icon"></div>
               <div class="coment">
                 Миграция, импорт <br> контента и апрейд<br> Drupal
               </div>
             </div>
             <div class="col-sm-3 col-xs-6">
-              <div class="competency"><img src="./sources/competency-7.svg" alt="comp"><img class="competences-img" src="./sources/icon.svg" alt="icon"></div>
+              <div class="competency"><img src="/main-page/sources/competency-7.svg" alt="comp"><img class="competences-img" src="/main-page/sources/icon.svg" alt="icon"></div>
               <div class="coment">
                 Оптимизация <br> и ускорение <br> Drupal-сайтов
               </div>
             </div>
             <div class="col-sm-3 col-xs-6">
-              <div class="competency"><img src="./sources/competency-8.svg" alt="comp"><img class="competences-img" src="./sources/icon.svg" alt="icon"></div>
+              <div class="competency"><img src="/main-page/sources/competency-8.svg" alt="comp"><img class="competences-img" src="/main-page/sources/icon.svg" alt="icon"></div>
               <div class="coment">
                 Веб-маркетинг <br> консультации <br> и работы по SEO
               </div>
@@ -273,7 +273,7 @@
                   </div>
                 </div>
                 <div class="advantage-icon"><img style="position: absolute; z-index:-1; right: 0px; bottom: 0px;"
-                    src="./sources/support1.svg" alt="support"></div>
+                    src="/main-page/sources/support1.svg" alt="support"></div>
               </div>
             </div>
       
@@ -287,7 +287,7 @@
                   </div>
                 </div>
                 <div class="advantage-icon"><img style="position: absolute; z-index:-1; right: 0px; bottom: 0px;"
-                    src="./sources/support2.svg" alt="support"></div>
+                    src="/main-page/sources/support2.svg" alt="support"></div>
               </div>
             </div>
       
@@ -301,7 +301,7 @@
                   </div>
                 </div>
                 <div class="advantage-icon"><img style="position: absolute; z-index:-1; right: 0px; bottom: 0px;"
-                    src="./sources/support3.svg" alt="support"></div>
+                    src="/main-page/sources/support3.svg" alt="support"></div>
               </div>
             </div>
       
@@ -316,7 +316,7 @@
                   </div>
                 </div>
                 <div class="advantage-icon"><img style="position: absolute; z-index:-1; right: 0px; bottom: 0px;"
-                    src="./sources/support4.svg" alt="support"></div>
+                    src="/main-page/sources/support4.svg" alt="support"></div>
               </div>
             </div>
       
@@ -330,7 +330,7 @@
                   </div>
                 </div>
                 <div class="advantage-icon"><img style="position: absolute; z-index:-1; right: 0px; bottom: 0px;"
-                    src="./sources/support5.svg" alt="support"></div>
+                    src="/main-page/sources/support5.svg" alt="support"></div>
               </div>
             </div>
       
@@ -344,7 +344,7 @@
                   </div>
                 </div>
                 <div class="advantage-icon"><img style="position: absolute; z-index:-1; right: 0px; bottom: 0px;"
-                    src="./sources/support6.svg" alt="support"></div>
+                    src="/main-page/sources/support6.svg" alt="support"></div>
               </div>
             </div>
       
@@ -358,7 +358,7 @@
                   </div>
                 </div>
                 <div class="advantage-icon"><img style="position: absolute; z-index:-1; right: 0px; bottom: 0px;"
-                    src="./sources/support7.svg" alt="support"></div>
+                    src="/main-page/sources/support7.svg" alt="support"></div>
               </div>
             </div>
       
@@ -372,7 +372,7 @@
                   </div>
                 </div>
                 <div class="advantage-icon"><img style="position: absolute; z-index:-1; right: 0px; bottom: 0px;"
-                    src="./sources/support8.svg" alt="support"></div>
+                    src="/main-page/sources/support8.svg" alt="support"></div>
               </div>
             </div>
       
@@ -449,21 +449,21 @@
           <div class="row">
             <div class="mt-3 col-12 col-md-4 d-flex justify-content-center">
               <div class="max-w-180">
-                <img src="./sources/competency-20.svg" alt="Событие GA" class="align-items-center d-block mx-auto">
+                <img src="/main-page/sources/competency-20.svg" alt="Событие GA" class="align-items-center d-block mx-auto">
                 <h2 class="fw-bold mb-0 text-center">от 1ч</h2>
                 <div class="text-center">Настройка события GA в интернет-магазине</div>
               </div>
             </div>
             <div class="mt-3 col-12 col-md-4 d-flex justify-content-center">
               <div class="max-w-180">
-                <img src="./sources/competency-21.svg" alt="Мобильная версия" class="align-items-center d-block mx-auto">
+                <img src="/main-page/sources/competency-21.svg" alt="Мобильная версия" class="align-items-center d-block mx-auto">
                 <h2 class="fw-bold mb-0 text-center">от 20ч</h2>
                 <div class="text-center">Разработка мобильной версии сайта</div>
               </div>
             </div>
             <div class="mt-3 col-12 col-md-4 d-flex justify-content-center">
               <div class="max-w-180">
-                <img src="./sources/competency-22.svg" alt="Оплата" class="align-items-center d-block mx-auto">
+                <img src="/main-page/sources/competency-22.svg" alt="Оплата" class="align-items-center d-block mx-auto">
                 <h2 class="fw-bold mb-0 text-center">от 8ч</h2>
                 <div class="text-center">Интеграция модуля оплаты</div>
               </div>
@@ -484,7 +484,7 @@
                 <div class="col-6 col-sm-6 col-md-4 members-unit">
                   <div class="members-panel">
                     <div class="members-picture">
-                      <img src="./sources/IMG1.jpg" alt="Фото члена команды" width="280" height="280"
+                      <img src="/main-page/sources/IMG1.jpg" alt="Фото члена команды" width="280" height="280"
                         class="pic-adaptive">
                     </div>
                     <div class="members-name">Сергей Синица</div>
@@ -496,7 +496,7 @@
                   <div class="members-panel">
                     <div class="members-picture">
     
-                      <img src="./sources/IMG2.jpg" alt="Фото члена команды" width="280" height="280"
+                      <img src="/main-page/sources/IMG2.jpg" alt="Фото члена команды" width="280" height="280"
                         class="pic-adaptive">
     
                     </div>
@@ -507,7 +507,7 @@
                 <div class="col-6 col-sm-6 col-md-4 members-unit">
                   <div class="members-panel">
                     <div class="members-picture">
-                      <img src="./sources/IMG3.jpg" alt="Фото члена команды" width="280" height="280"
+                      <img src="/main-page/sources/IMG3.jpg" alt="Фото члена команды" width="280" height="280"
                         class="pic-adaptive">
                     </div>
                     <div class="members-name">Алексей Синица</div>
@@ -517,7 +517,7 @@
                 <div class="col-6 col-sm-6 col-md-4 members-unit">
                   <div class="members-panel">
                     <div class="members-picture">
-                      <img src="./sources/IMG4.jpg" alt="Фото члена команды" width="280" height="280"
+                      <img src="/main-page/sources/IMG4.jpg" alt="Фото члена команды" width="280" height="280"
                         class="pic-adaptive">
                     </div>
                     <div class="members-name">Дарья Бочкарёва</div>
@@ -528,7 +528,7 @@
                 <div class="col-6 col-sm-6 col-md-4 members-unit">
                   <div class="members-panel">
                     <div class="members-picture">
-                      <img src="./sources/IMG5.jpg" alt="Фото члена команды" width="280" height="280"
+                      <img src="/main-page/sources/IMG5.jpg" alt="Фото члена команды" width="280" height="280"
                         class="pic-adaptive">
                     </div>
                     <div class="members-name">Ирина Торкунова</div>
@@ -550,7 +550,7 @@
 
           <div class="last-cases-table">
             <a class="case-block" href="">
-              <div class="case-pic" style="background-image: url(./sources/img/1.jpg);"></div>
+              <div class="case-pic" style="background-image: url(/main-page/sources/img/1.jpg);"></div>
               <h3>
                 Настройка кэширования данных. Апгрейд сервера. Ускорение работы сайта в 30 раз!
               </h3>
@@ -559,25 +559,25 @@
               </div>
             </a>
             <a class="case-block fullscreen-case" href="">
-              <div class="case-pic" style="background-image: url(./sources/img/4.jpg)"></div>
+              <div class="case-pic" style="background-image: url(/main-page/sources/img/4.jpg)"></div>
               <h3>Использование отчетов Ecommerce в Яндекс.Метрике</h3>
             </a>
             <a class="case-block fullscreen-case" href="">
-              <div class="case-pic" style="background-image: url(./sources/img/3.jpg)"></div>
+              <div class="case-pic" style="background-image: url(/main-page/sources/img/3.jpg)"></div>
               <h3>
                 Повышение конверсии страницы с формой заявки с применением AB-тестирования
               </h3>
               <div class="case-post-date">24.01.2020</div>
             </a>
             <a class="case-block fullscreen-case" href="">
-              <div class="case-pic" style="background-image: url(./sources/img/speed_case.jpg)"></div>
+              <div class="case-pic" style="background-image: url(/main-page/sources/img/speed_case.jpg)"></div>
               <h3>
                 Drupal 7: ускорение времени генерации страниц интернет-магазина на 32%
               </h3>
               <div class="case-post-date">23.09.2019</div>
             </a>
             <a class="case-block" href="">
-              <div class="case-pic" style="background-image: url(./sources/img/monitor_case.png)"></div>
+              <div class="case-pic" style="background-image: url(/main-page/sources/img/monitor_case.png)"></div>
               <h3>
                 Обмен товарами и заказами интернет-магазинов на Drupal 7 с 1C: Предприятие, МойСклад, Класс365
               </h3>
@@ -602,7 +602,7 @@
     
                 <div class="slick-slide">
                   <div class="logo">
-                    <img loading="lazy" src="./sources/logos/logo_0.png" width="78" height="46" alt="Ciel parfum">
+                    <img loading="lazy" src="/main-page/sources/logos/logo_0.png" width="78" height="46" alt="Ciel parfum">
                   </div>
                   <div class="report-text">
                     <div class="field-content">
@@ -631,7 +631,7 @@
     
                 <div class="slick-slide">
                   <div class="logo">
-                    <img loading="lazy" src="./sources/logos/logo.png" width="113" height="46" alt="personal-writer.com">
+                    <img loading="lazy" src="/main-page/sources/logos/logo.png" width="113" height="46" alt="personal-writer.com">
                   </div>
                   <div class="report-text">
                     <div class="field-content">Сергей — профессиональный, высококвалифицированый программист 
@@ -649,7 +649,7 @@
     
                 <div class="slick-slide">
                   <div class="logo">
-                    <img loading="lazy" src="./sources/logos/farbors_ru.jpg" width="192" height="46" alt="farbors.ru">
+                    <img loading="lazy" src="/main-page/sources/logos/farbors_ru.jpg" width="192" height="46" alt="farbors.ru">
                   </div>
                   <div class="report-text">
                     <div class="field-content">Выражаю глубочайшую благодарность команде специалистов 
@@ -667,7 +667,7 @@
     
                 <div class="slick-slide">
                   <div class="logo">
-                    <img loading="lazy" src="./sources/logos/nashagazeta_ch.png" width="157" height="46"
+                    <img loading="lazy" src="/main-page/sources/logos/nashagazeta_ch.png" width="157" height="46"
                       alt="nashagazeta.ch">
                   </div>
                   <div class="report-text">
@@ -688,7 +688,7 @@
     
                 <div class="slick-slide">
                   <div class="logo">
-                    <img loading="lazy" src="./sources/logos/logo-estee.png" width="99" height="46" alt="estee-design.ru">
+                    <img loading="lazy" src="/main-page/sources/logos/logo-estee.png" width="99" height="46" alt="estee-design.ru">
                   </div>
                   <div class="report-text">
                     <div class="field-content">Наша компания Estee Design занимается дизайном интерьеров. 
@@ -711,7 +711,7 @@
     
                 <div class="slick-slide">
                   <div class="logo">
-                    <img loading="lazy" src="./sources/logos/cableman_ru.png" width="200" height="41" alt="cableman.ru">
+                    <img loading="lazy" src="/main-page/sources/logos/cableman_ru.png" width="200" height="41" alt="cableman.ru">
                   </div>
                   <div class="report-text">
                     <div class="field-content">Наша компания за несколько лет сменила несколько 
@@ -733,7 +733,7 @@
     
                 <div class="slick-slide">
                   <div class="logo">
-                    <img loading="lazy" src="./sources/logos/logo_2.png" width="165" height="46" alt="www.serebro.ag">
+                    <img loading="lazy" src="/main-page/sources/logos/logo_2.png" width="165" height="46" alt="www.serebro.ag">
                   </div>
                   <div class="report-text">
                     <div class="field-content">За довольно продолжительный срок (2014 - 2016 годы) 
@@ -754,7 +754,7 @@
     
                 <div class="slick-slide">
                   <div class="logo">
-                    <img loading="lazy" src="./sources/logos/lpcma_rus_v4.jpg" width="110" height="46"
+                    <img loading="lazy" src="/main-page/sources/logos/lpcma_rus_v4.jpg" width="110" height="46"
                       alt="http://lpcma.tsu.ru/en">
                   </div>
                   <div class="report-text">
@@ -943,8 +943,8 @@
     <footer class="footer position-relative" id="contacts">
         <div class="footer-background"></div>
           
-        <img src="./sources/footer-D-1.svg" alt="Декоративный элемент 1" class="footer-image image-1">
-        <img src="./sources/footer-D-2.png" alt="Декоративный элемент 2" class="footer-image image-2">
+        <img src="/main-page/sources/footer-D-1.svg" alt="Декоративный элемент 1" class="footer-image image-1">
+        <img src="/main-page/sources/footer-D-2.png" alt="Декоративный элемент 2" class="footer-image image-2">
     
         <div class="container">
             <div class="footer-content position-relative">
@@ -960,11 +960,11 @@
                     <div class="d-flex align-items-center mt-4">
                         <div class="me-3">
                             <div class="d-flex align-items-center mb-2">
-                                <img src="./sources/phone_icon.png" alt="Иконка телефона" class="icon-small me-2">
+                                <img src="/main-page/sources/phone_icon.png" alt="Иконка телефона" class="icon-small me-2">
                                 <p class="footer-contact mb-0"><a href="tel:+78002222673" class="text-white text-decoration-none">8 800 222-26-73</a></p>
                             </div>
                             <div class="d-flex align-items-center">
-                                <img src="./sources/mail_icon.png" alt="Иконка email" class="icon-small me-2">
+                                <img src="/main-page/sources/mail_icon.png" alt="Иконка email" class="icon-small me-2">
                                 <p class="footer-contact mb-0"><a href="mailto:info@drupal-coder.ru" class="text-white text-decoration-line">info@drupal-coder.ru</a></p>
                             </div>
                         </div>
@@ -972,7 +972,7 @@
                 </div>
 
                 <div class="col-lg-6 col-md-12">
-                    <?php include("../form.php") ?>
+                  <?php include('form.php') ?>
                 </div>
             </div>
 
@@ -981,16 +981,16 @@
             <div class="row">
                 <div class="col-lg-12 d-flex align-items-center mb-2 social-icons">
                     <a href="https://vk.com" class="footer-icon me-3">
-                        <img src="./sources/vk_icon.png" alt="VK" class="social-icon">
+                        <img src="/main-page/sources/vk_icon.png" alt="VK" class="social-icon">
                     </a>
                     <a href="https://facebook.com" class="footer-icon me-3">
-                        <img src="./sources/facebook_icon.png" alt="Facebook" class="social-icon">
+                        <img src="/main-page/sources/facebook_icon.png" alt="Facebook" class="social-icon">
                     </a>
                     <a href="https://youtube.com" class="footer-icon me-3">
-                        <img src="./sources/youtube_icon.png" alt="YouTube" class="social-icon">
+                        <img src="/main-page/sources/youtube_icon.png" alt="YouTube" class="social-icon">
                     </a>
                     <a href="https://web.telegram.org" class="footer-icon me-3">
-                        <img src="./sources/tg_icon.png" alt="Telegram" class="social-icon">
+                        <img src="/main-page/sources/tg_icon.png" alt="Telegram" class="social-icon">
                     </a>
                 </div>
 
