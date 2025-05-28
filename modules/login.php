@@ -33,7 +33,7 @@ function authorized(){
     }
     else { 
       session_destroy();
-      header('Location: ./');
+      header('Location: ./#feedback-form');
     }
     echo '</div>';
 }
@@ -89,7 +89,7 @@ else {
     $_SESSION['login'] = $_POST['login'];
     $_SESSION['uid'] = $uid;
 
-    header('Location: ./');
+    header('Location: ./#feedback-form');
 
   }else{
     printFieldsToAuthAndError();
