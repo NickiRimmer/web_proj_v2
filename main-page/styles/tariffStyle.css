@@ -54,7 +54,7 @@ body {
   left: 0;
   width: 13px;
   height: 10px;
-  background: url('./main-page/sources/checkmark.svg') no-repeat center;
+  background: url('./../../main-page/sources/checkmark.svg') no-repeat center;
   background-size: contain;
 }
 
@@ -150,7 +150,7 @@ body {
 
   #block-tariffs {
     padding: 160px 0 90px;
-    background: url('./main-page/sources/D-background-opacity.svg') no-repeat right top, #fff;
+    background: url('./../../main-page/sources/D-background-opacity.svg') no-repeat right top, #fff;
     background-size: 58%;
   }
 }
@@ -198,7 +198,7 @@ body {
 
   #block-tariffs{
     padding: 5 vh 0 2vh;
-    background-image: url('./main-page/sources/D-background-opacity-cropped-cropped.svg');
+    background-image: url('./../../main-page/sources/D-background-opacity-cropped-cropped.svg');
     background-size: cover;
     background-repeat: no-repeat;
   }
