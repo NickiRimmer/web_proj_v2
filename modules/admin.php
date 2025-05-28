@@ -78,7 +78,7 @@ if ($edit_id) {
 <head>
     <meta charset="UTF-8">
     <title>Админка</title>
-    <link rel='stylesheet' href='styles/style.css'>
+    <link rel='stylesheet' href='./styles/style.css'>
 </head>
 <body>
 
